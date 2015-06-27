@@ -10,33 +10,31 @@ First Install development dependencies, ensure you have nodejs installed and ins
 
 [Gulp](http://gulpjs.com/) command line utility:
 
-  `npm install -g gulp`
+`npm install -g gulp`
 
 [Bower](http://bower.io/) command line utility:
   
-  `npm install -g bower`
+`npm install -g bower`
 
 [Karma](http://karma-runner.github.io/0.12/index.html) command line utility:
   
-  `npm install -g karma`
+`npm install -g karma`
 
 [jshint](http://jshint.com/install/)
 	
-	`npm install -g jshint`
+`npm install -g jshint`
 
 [htmlhint](https://github.com/yaniswang/HTMLHint/wiki/Usage)
 
-	`npm install -g htmlhint`
+`npm install -g htmlhint`
 
 ###Ensure node tools and gulp plugins are up to date:
 
-  `npm install`
+- `npm install`
 
-will install dependencies defined in **package.json** file
 
-  `bower install`
+- `bower install`
 
-will install front end dependencies defined in **bower.json** file.
 
 ## Usage
 

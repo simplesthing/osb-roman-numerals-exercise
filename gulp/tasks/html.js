@@ -13,8 +13,8 @@ gulp.task('html', function(){
   return  gulp
           .src(config.htmlTemplates)
           .pipe($.memoryCache('html'))
-          // .pipe($.htmlhint(config.htmlhint))
-          // .pipe($.htmlhint.reporter())
+          .pipe($.htmlhint(config.htmlhint))
+          .pipe($.htmlhint.reporter())
           .pipe($.size({title:'html', showFiles: true}));
 });
 /**
@@ -25,8 +25,8 @@ gulp.task('html:dist', function(){
 
   return gulp
           .src(config.htmlTemplates)
-          // .pipe($.htmlhint(config.htmlhint))
-          // .pipe($.htmlhint.failReporter())
+          .pipe($.htmlhint(config.htmlhint))
+          .pipe($.htmlhint.failReporter())
           .pipe($.minifyHtml({empty: true}))
           .pipe($.angularTemplatecache(
             'templateCache.js',
@@ -42,7 +42,7 @@ gulp.task('html:dist', function(){
 gulp.task('html:commit', function(){
   return  gulp
           .src(path.join(config.src, '/**/*.html'))
-          // .pipe($.htmlhint(config.htmlhint))
-          // .pipe($.htmlhint.reporter())
+          .pipe($.htmlhint(config.htmlhint))
+          .pipe($.htmlhint.reporter())
           .pipe(config.gitReporter('html'));
 });
