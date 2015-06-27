@@ -1,0 +1,268 @@
+//
+// Generic layouts based on bootstrap grid
+//--------------------------------------
+.one-col {
+  @extend .container-fluid;
+
+  &.container {
+    @extend .container;
+  }
+}
+.one-col > .row > .col {
+  @extend .col-xs-12;
+  @extend .col-sm-12;
+  @extend .col-md-12;
+}
+
+.one-two-col {
+  @extend .container-fluid;
+
+  &.container {
+    @extend .container;
+  }
+}
+.one-two-col > .row > .col {
+  @extend .col-xs-12;
+  @extend .col-sm-6;
+  @extend .col-md-12;
+}
+
+.two-col {
+  @extend .container-fluid;
+
+  &.container {
+    @extend .container;
+  }
+  &.no-pad {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.two-col > .row > .col {
+  @extend .col-xs-12;
+  @extend .col-sm-6;
+  @extend .col-md-6;
+}
+
+.three-col {
+  @extend .container-fluid;
+
+  &.container {
+    @extend .container;
+  }
+  &.no-pad {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.three-col > .row > .col {
+  @extend .col-xs-8;
+  @extend .col-sm-4;
+  @extend .col-md-4;
+}
+
+.four-col {
+  @extend .container-fluid;
+
+  &.container {
+    @extend .container;
+  }
+}
+.four-col > .row > .col {
+  @extend .col-xs-6;
+  // 4 has to be divisible by 2 or 1 for this layout to work;
+  // 12 columns / col-sm-4 = 3, leaving one odd column orphaned in sm screen size
+  @extend .col-sm-3;
+  @extend .col-md-3;
+}
+
+.six-col {
+  @extend .container-fluid;
+
+  &.container {
+    @extend .container;
+  }
+}
+.six-col > .row > .col {
+  @extend .col-xs-6;
+  @extend .col-sm-4;
+  // same here if col-md-3 is used here the will be 2 orphans
+  // 12/3 = 4 ... 6-4 = 2 orphans
+  @extend .col-md-2;
+  @extend .col-lg-2;
+}
+
+// Named layouts
+//--------------------------------------
+
+.two-five {
+  @extend .container-fluid;
+
+  &.container {
+    @extend .container;
+  }
+}
+.two-five > .row > .primary {
+  @extend .col-xs-12;
+  @extend .col-md-5;
+}
+
+.two-five > .row > .secondary {
+  @extend .col-xs-12;
+  @extend .col-md-2;
+}
+
+.three-six {
+  @extend .container-fluid;
+
+  &.container {
+    @extend .container;
+  }
+}
+.three-six > .row > .primary {
+  @extend .col-sm-12;
+  @extend .col-md-6;
+}
+.three-six > .row > .secondary {
+  @extend .col-sm-6;
+  @extend .col-md-3;
+}
+
+.one-ten {
+  @extend .container-fluid;
+
+  &.container {
+    @extend .container;
+  }
+}
+
+.one-ten > .row > .primary {
+  @extend .col-sm-10;
+  @extend .col-md-10;
+}
+.one-ten > .row > .secondary {
+  @extend .col-sm-1;
+  @extend .col-md-1;
+}
+
+.two-ten {
+  @extend .container-fluid;
+
+  &.container {
+    @extend .container;
+  }
+}
+
+.two-ten > .row > .primary {
+  @extend .col-sm-10;
+  @extend .col-md-10;
+}
+.two-ten > .row > .secondary {
+  @extend .col-sm-2;
+  @extend .col-md-2;
+}
+
+.four-eight {
+  @extend .container-fluid;
+
+  &.container {
+    @extend .container;
+  }
+}
+.four-eight > .row > .primary {
+  @extend .col-sm-12;
+  @extend .col-md-8;
+}
+.four-eight > .row > .secondary {
+  @extend .col-sm-12;
+  @extend .col-md-4;
+}
+.two-eight {
+  @extend .container-fluid;
+
+  &.container {
+    @extend .container;
+  }
+}
+.two-eight > .row > .primary {
+  @extend .col-md-8;
+}
+.two-eight > .row > .secondary {
+  @extend .col-md-2;
+}
+
+.ten-two {
+  @extend .container-fluid;
+
+  &.container {
+    @extend .container;
+  }
+}
+
+.ten-two > .row > .primary {
+  @extend .col-md-10;
+  @extend .col-sm-12;
+}
+
+.ten-two > .row > .secondary {
+  @extend .col-md-2;
+  @extend .col-sm-12;
+}
+
+.eleven-one {
+  @extend .container-fluid;
+
+  &.container {
+    @extend .container;
+  }
+}
+
+.eleven-one > .row > .primary {
+  @extend .col-md-11;
+  @extend .col-sm-12;
+}
+
+.eleven-one > .row > .secondary {
+  @extend .col-md-1;
+  @extend .col-sm-12;
+}
+
+.six-off-three {
+  @extend .container-fluid;
+
+  &.container {
+    @extend .container;
+  }
+}
+.six-off-three >  .row > .col {
+  @extend .col-xs-12;
+  @extend .col-md-6;
+  @extend .col-md-offset-3;
+}
+
+.eight-off-two {
+  @extend .container-fluid;
+
+  &.container {
+    @extend .container;
+  }
+}
+.eight-off-two >  .row > .col {
+  @extend .col-xs-12;
+  @extend .col-md-8;
+  @extend .col-sm-offset-2;
+}
+
+.ten-off-one {
+  @extend .container-fluid;
+
+  &.container {
+    @extend .container;
+
+  }
+}
+.ten-off-one > .row > .col {
+  @extend .col-xs-12;
+  @extend .col-md-10;
+  @extend .col-md-offset-1;
+}

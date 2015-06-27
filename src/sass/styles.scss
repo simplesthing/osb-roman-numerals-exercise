@@ -1,0 +1,6 @@
+// This is the main source config for all styles to be added w/ @import
+@import "bootstrap";
+@import "custom_variables";
+@import "sprite"; //comment this line out if you app has no sprites
+@import "layouts";
+@import "main";

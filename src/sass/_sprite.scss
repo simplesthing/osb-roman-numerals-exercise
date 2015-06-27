@@ -1,0 +1,40 @@
+$add-sm: -0px -0px 29px 29px;
+$add-outlined: -0px -29px 30px 30px;
+$add-outlined-active: -0px -59px 30px 30px;
+$add-lg: -0px -89px 34px 34px;
+$advanced-active: -0px -123px 45px 45px;
+$advanced: -0px -168px 45px 45px;
+$add-sm-ret: -0px -213px 50px 50px;
+$add-outlined-ret: -0px -263px 52px 52px;
+$add-outlined-active-ret: -0px -315px 52px 52px;
+$add-lg-ret: -0px -367px 60px 60px;
+$advanced-active-ret: -0px -427px 82px 82px;
+$advanced-ret: -0px -509px 82px 82px;
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+@function sprite-width($sprite) {
+  @return nth($sprite, 3);
+}
+@function sprite-height($sprite) {
+  @return nth($sprite, 4);
+}
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 1);
+  $sprite-offset-y: nth($sprite, 2);
+  background-position: $sprite-offset-x $sprite-offset-y;
+}
+@mixin sprite($sprite, $display: block) {
+  @include sprite-position($sprite);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: $display;
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+.icon {
+  background-image: url("../images/sprite.png");
+}

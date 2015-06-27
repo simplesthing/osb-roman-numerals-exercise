@@ -1,0 +1,27 @@
+{
+  "name": "roman-numerals-exercise",
+  "version": "0.0.0",
+  "authors": [
+    "Ava Collins <ava.collins@apollo.edu>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4",
+    "angular-bootstrap": "~0.12.1",
+    "angular-ui-router": "~0.2.14",
+    "bootstrap-sass-official": "~3.3.4",
+    "lodash": "~3.8.0",
+    "fontawesome": "~4.3.0",
+    "ramda": "~0.15.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.0"
+  }
+}

@@ -1,0 +1,19 @@
+<article class="one-col" ng-controller="RomanNumeralController as ctrl">
+	<div class="row">
+		<div class="col">
+			<h1>Roman Numeral Converter</h1>
+
+			<p>Because this is meant to be a simple exercisethere is no error handling if the anything other than an integer is entered and it is limited to 9999.</p>
+			<form >
+				<div class="form-group">
+					<label for="number">Number</label>
+					<input type="text" name="number" id="number" ng-model="ctrl.number">
+					<button ng-click="ctrl.convert(ctrl.number)">Convert</button>
+				</div>
+				<div class="form-group">
+					<p>{{ctrl.rn}}</p>
+				</div>
+			</form>
+		</div>
+	</div>
+</article>
