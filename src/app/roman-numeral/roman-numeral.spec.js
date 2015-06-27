@@ -17,8 +17,6 @@ var RomanNumeralService;
 
 	describe('convertArgsToArray', function(){
 		it('should convert Number argument in to an array of characters', function(){
-			// console.log(RomanNumeralService.toRomanNumeral(1999));
-			// console.log(RomanNumeralService.convertArgsToArray(1999));
 			expect(RomanNumeralService.convertArgsToArray(1999)).toBeArray();
 		});
 		it('should return the array of characters in reverse sequence', function(){
