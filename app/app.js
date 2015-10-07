@@ -11,7 +11,7 @@
       url: '/home',
       views: {
         'main': {
-          templateUrl: 'src/app/roman-numeral/roman-numeral.html'
+          templateUrl: 'app/roman-numeral/roman-numeral.html'
         }
       }
     });
