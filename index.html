@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Analytics dashboard application.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+  <!-- endbower -->
+
+  <!-- inject:css -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <!-- endinject -->
+</head>
+
+<body ng-app="roman-numerals">
+
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/lodash/lodash.js"></script>
+  <script src="bower_components/ramda/dist/ramda.js"></script>
+  <!-- endbower -->
+
+  <!-- inject:js -->
+  <script src="app/app.js"></script>
+  <script src="app/roman-numeral/roman-numeral-service.js"></script>
+  <script src="app/roman-numeral/roman-numeral-controller.js"></script>
+  <script src="app/lib/ramda.js"></script>
+  <!-- endinject -->
+  <div ui-view="main"></div>
+</body>
+</html>
