@@ -4,6 +4,8 @@
 			<h1>Roman Numeral Converter</h1>
 
 			<p>Because this is meant to be a simple exercise there is no error handling if anything other than an number is entered and it has an upper limit of 9999.</p>
+			<p>Source code can be found <a href="https://github.com/simplesthing/roman-numerals-exercise">on github.</a> </p>
+			<h2>Enter a number below</h2>
 			<form >
 				<div class="form-group">
 					<label for="number">Number</label>
@@ -11,7 +13,8 @@
 					<button ng-click="ctrl.convert(ctrl.number)">Convert</button>
 				</div>
 				<div class="form-group">
-					<p>{{ctrl.rn}}</p>
+					<label for="roman-numeral">Roman Numeral</label>
+					<p id="roman-numeral">{{ctrl.rn}}</p>
 				</div>
 			</form>
 		</div>
